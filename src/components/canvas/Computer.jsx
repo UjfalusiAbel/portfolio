@@ -4,6 +4,7 @@ import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
 
 import CanvasLoader from "../Loader";
 import { degToRad } from "three/src/math/MathUtils";
+
 const Computer = ({ isMobile }) => {
   const computer = useGLTF('./computer/scene.gltf');
   return (

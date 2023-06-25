@@ -4,6 +4,20 @@ import {
   backend,
   game,
   reea,
+  csharp,
+  javascript,
+  typescript,
+  unity,
+  reactjs,
+  nodejs,
+  mongodb,
+  postgres,
+  docker,
+  git,
+  drg,
+  adrenaline,
+  therapiano,
+  sicordia
 } from "../assets";
 
 export const navLinks = [
@@ -40,14 +54,10 @@ const services = [
   },
 ];
 
-/*const technologies = [
+const technologies = [
   {
-    name: "HTML 5",
-    icon: html,
-  },
-  {
-    name: "CSS 3",
-    icon: css,
+    name: "C#",
+    icon: csharp,
   },
   {
     name: "JavaScript",
@@ -58,16 +68,12 @@ const services = [
     icon: typescript,
   },
   {
+    name: "Unity",
+    icon: unity,
+  },
+  {
     name: "React JS",
     icon: reactjs,
-  },
-  {
-    name: "Redux Toolkit",
-    icon: redux,
-  },
-  {
-    name: "Tailwind CSS",
-    icon: tailwind,
   },
   {
     name: "Node JS",
@@ -78,22 +84,18 @@ const services = [
     icon: mongodb,
   },
   {
-    name: "Three JS",
-    icon: threejs,
-  },
-  {
-    name: "git",
-    icon: git,
-  },
-  {
-    name: "figma",
-    icon: figma,
+    name: "PostgreSQL",
+    icon: postgres,
   },
   {
     name: "docker",
     icon: docker,
   },
-];*/
+  {
+    name: "git",
+    icon: git,
+  }
+];
 
 const experiences = [
   {
@@ -124,98 +126,104 @@ const experiences = [
   }
 ];
 
-/*const testimonials = [
+const projects = [
   {
-    testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-    name: "Sara Lee",
-    designation: "CFO",
-    company: "Acme Co",
-    image: "https://randomuser.me/api/portraits/women/4.jpg",
+    name: "DRG Grouper",
+    description:
+      "An application created for medics and other people working in the field for calculating insurance claims. I was responsible for implementing new backend features in .Net for creating statistics.",
+    tags: [
+      {
+        name: ".Net",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "C#",
+        color: "green-text-gradient",
+      },
+    ],
+    image: drg,
+    link: "https://drgrouper.ro/",
   },
   {
-    testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: "Chris Brown",
-    designation: "COO",
-    company: "DEF Corp",
-    image: "https://randomuser.me/api/portraits/men/5.jpg",
+    name: "Adrenaline Dungeon",
+    description:
+      "A top-down dungeon crawler 2D game made in Unity for mobile and PC about beeing captive in a time loop inside a dungeon. I worked on many parts in the game code, like UI, file handling, randomised generation and AI ",
+    tags: [
+      {
+        name: "Unity",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "C#",
+        color: "green-text-gradient",
+      },
+    ],
+    image: adrenaline,
+    link: "https://store.steampowered.com/app/2320340/Adrenaline_Dungeon/",
   },
   {
-    testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "Lisa Wang",
-    designation: "CTO",
-    company: "456 Enterprises",
-    image: "https://randomuser.me/api/portraits/women/6.jpg",
+    name: "Therapiano",
+    description:
+      "A mobile application which can be used for music therapy, watching in it beautiful drawings and illustrations, while listening to calming piano plays. I created both the Android mobile app and the backend written in C# together with an admin website.",
+    tags: [
+      {
+        name: "React Native",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "JavaScript",
+        color: "green-text-gradient",
+      },
+      {
+        name: ".Net",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "C#",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "PostgreSQL",
+        color: "green-text-gradient",
+      },
+    ],
+    image: therapiano,
+    link: "https://play.google.com/store/apps/details?id=com.ujfalusi.abel.Therapiano",
+  },
+  {
+    name: "Sicordia",
+    description:
+      "A complete blog about philosophy subjects, creativity and self-knowledge with useful resources. It was written entirely by me in React and .Net, deployed in a Docker container.",
+    tags: [
+      {
+        name: "React",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "JavaScript",
+        color: "green-text-gradient",
+      },
+      {
+        name: ".Net",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "C#",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "PostgreSQL",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Docker",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: sicordia,
+    link: "https://sicordia.com/",
   },
 ];
 
-const projects = [
-  {
-    name: "Car Rent",
-    description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "mongodb",
-        color: "green-text-gradient",
-      },
-      {
-        name: "tailwind",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: carrent,
-    source_code_link: "https://github.com/",
-  },
-  {
-    name: "Job IT",
-    description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "restapi",
-        color: "green-text-gradient",
-      },
-      {
-        name: "scss",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: jobit,
-    source_code_link: "https://github.com/",
-  },
-  {
-    name: "Trip Guide",
-    description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-    tags: [
-      {
-        name: "nextjs",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "supabase",
-        color: "green-text-gradient",
-      },
-      {
-        name: "css",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
-  },
-];*/
+export { services, experiences, technologies, projects }
 
-export { services, experiences }
-//export { services, technologies, experiences, testimonials, projects };
